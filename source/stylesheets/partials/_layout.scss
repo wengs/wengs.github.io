@@ -2,6 +2,10 @@
     @include outer-container;
 }
 
+body {
+  margin: 0;
+}
+
 ol {
   font-size: 1em;
   font-weight: 500;
@@ -26,4 +30,14 @@ ol {
 
 .small-column {
   @include span-columns(4 of 12);
+}
+
+.article {
+	margin: 0 0 3em;
+}
+
+footer {
+  border-top: 1px solid $base-border-color;
+  margin: 2em 0;
+  padding-top: 2em;
 }

@@ -19,3 +19,5 @@ gem 'bitters'
 gem 'bourbon'
 
 gem 'neat'
+
+gem "jquery-middleman"
