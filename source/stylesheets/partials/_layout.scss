@@ -2,10 +2,12 @@
     @include outer-container;
     @include media($mobile) {
       padding: 0 8px;
+      font-size: $base-font-size * 1.5;
     }
 
     @include media($medium-screen) {
       padding: 0 8px;
+
     }
 }
 
