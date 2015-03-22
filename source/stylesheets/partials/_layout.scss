@@ -1,7 +1,12 @@
 #main {
-
     @include outer-container;
+    @include media($mobile) {
+      padding: 0 8px;
+    }
 
+    @include media($medium-screen) {
+      padding: 0 8px;
+    }
 }
 
 body {

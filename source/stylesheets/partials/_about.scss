@@ -1,4 +1,21 @@
-#about {
-	
+#weng {
+	@include span-columns(5 of 12);
+	@include shift(3);
+ 
+  img {
 
+      
+  	  border-radius: 4px;
+  	  @include clearfix;
+  	  min-width:200px;
+  	  margin: 5px auto;
+  	  @include clearfix;
+  }
+
+
+}
+
+#introduction {
+	@include span-columns(12 of 12);
+	@include outer-container;
 }

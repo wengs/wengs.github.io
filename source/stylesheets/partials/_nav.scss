@@ -1,12 +1,12 @@
 header.navigation {
   ///////////////////////////////////////////////////////////////////////////////////
+  border-top: 9px solid #e74c3c;
   margin-bottom: 1.4em;
   box-shadow: 0px 1px 10px #2a2a2a;
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
   $base-accent-color: #477DCA !default;
-  $bright-red: #34495e;
-
+  $dark-blue: #2c3e50;
   $large-screen: em(860) !default;
   
   a {
@@ -15,7 +15,7 @@ header.navigation {
   //////////////////////////////////////////////////////////////////////////////////
 
   $navigation-padding: 1em;
-  $navigation-background: $bright-red;
+  $navigation-background: $dark-blue;
   $navigation-color: transparentize(white, 0.3);
   $navigation-color-hover: white;
   $navigation-height: 100px;
@@ -46,12 +46,12 @@ header.navigation {
     float: left;
     max-height: $navigation-height;
     padding-left: $navigation-padding;
-    padding: 0.6em 0;
+    padding: 0.4em 0;
     padding-right: 2em;
     margin-right: 2em;
     font-size: 2em;
     
-    color: #f1c40f;
+    color: #e74c3c; //#f1c40f;
 
     a {
       max-height: $navigation-height;
@@ -89,7 +89,7 @@ header.navigation {
     z-index: 9999999;
 
     @include media ($horizontal-bar-mode) {
-      float: left;
+      float: right;
     }
   }
 
