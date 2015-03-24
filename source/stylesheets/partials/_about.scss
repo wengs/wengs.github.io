@@ -1,6 +1,6 @@
 #weng {
 	@include span-columns(5 of 12);
-  float: right;
+  float: left;
  
   img {
 	  border-radius: 4px;
@@ -9,22 +9,29 @@
   }
 
   @include media($mobile) {
-    @include span-columns(12 of 12)
+    @include span-columns(12 of 12);
   }
 
   .projects {
     margin-top: 10px;
 
     a {
-      color: $tomato;
+      color: white;
     }
 
     a:hover {
-      color: darken($tomato, 15%);
+      color: darken(white, 15%);
+    }
+
+    .project-title {
+      font-size: 0.9em;
+      @include span-columns(2 of 5);
+      @include row();
     }
 
     .project-description {
       padding-left: 1em;
+      @include span-columns(5 of 5);
     }
   }
 
@@ -33,7 +40,7 @@
 
 #introduction {
   @include span-columns(6 of 12);
-  float:left;
+  float:right;
   @include media($mobile) {
     @include span-columns(12 of 12);
   }
