@@ -1,6 +1,6 @@
 #main {
     @include outer-container;
-    margin-top: 130px;
+    margin-top: 150px;
     @include media($mobile) {
       padding: 0 8px;
       font-size: $base-font-size ;
