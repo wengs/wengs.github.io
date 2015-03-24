@@ -3,31 +3,42 @@
   float: right;
  
   img {
-  	  border-radius: 4px;
-  	  @include clearfix;
-  	  min-width:200px;
-  	  margin: 5px auto;
+	  border-radius: 4px;
+	  min-width:200px;
+	  margin: 5px auto;
   }
 
   @include media($mobile) {
     @include span-columns(12 of 12)
   }
 
+  .projects {
+    margin-top: 10px;
+
+    a {
+      color: $tomato;
+    }
+
+    a:hover {
+      color: darken($tomato, 15%);
+    }
+
+    .project-description {
+      padding-left: 1em;
+    }
+  }
+
+  @include clearfix;
 }
 
 #introduction {
-    @include span-columns(6 of 12);
-    @include outer-container;
-
-    @include media($mobile) {
-    @include span-columns(12 of 12)
+  @include span-columns(6 of 12);
+  float:left;
+  @include media($mobile) {
+    @include span-columns(12 of 12);
   }
-
-  }
-
-.projects {
-  margin-top: 10px;
-  @include span-columns(3);
 }
+
+
 
 

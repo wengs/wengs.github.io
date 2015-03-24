@@ -2,7 +2,7 @@ header.navigation {
   ///////////////////////////////////////////////////////////////////////////////////
   position: fixed;
   top: 0;
-  border-top: 9px solid #e74c3c;
+
   margin-bottom: 1.4em;
   box-shadow: 0px 1px 10px #2a2a2a;
   $base-border-color: gainsboro !default;
@@ -15,7 +15,7 @@ header.navigation {
     text-decoration: none;
   }
   //////////////////////////////////////////////////////////////////////////////////
-
+  $logo-color: #f1c40f;
   $navigation-padding: 1em;
   $navigation-background: $dark-blue;
   $navigation-color: transparentize(white, 0.3);
@@ -31,6 +31,7 @@ header.navigation {
   $navigation-submenu-width: 12em;
   $horizontal-bar-mode: $large-screen;
 
+  border-top: 9px solid $logo-color;
   background-color: $navigation-background;
   border-bottom: 1px solid darken($navigation-background, 10);
   min-height: $navigation-height;
@@ -54,7 +55,7 @@ header.navigation {
     margin-left: 0.4em;
     font-size: 2em;
     
-    color: #e74c3c; //#f1c40f;
+    color: $logo-color;
 
     a {
       max-height: $navigation-height;
