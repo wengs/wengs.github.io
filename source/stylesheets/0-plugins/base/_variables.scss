@@ -18,7 +18,7 @@ $base-z-index: 0;
 
 // Colors
 $blue: #477dca;
-$dark-gray: #333;
+$dark-gray: #585a62;
 $medium-gray: #999;
 $light-gray: #ddd;
 $tomato: #e74c3c;
@@ -36,4 +36,8 @@ $base-border: 1px solid $base-border-color;
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+.clear {
+	@include clearfix;
+}
 

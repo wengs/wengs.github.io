@@ -4,7 +4,7 @@ header.navigation {
   top: 0;
 
   margin-bottom: 1.4em;
-  box-shadow: 0px 1px 10px #2a2a2a;
+  //box-shadow: 0px 1px 10px #2a2a2a;
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
   $base-accent-color: #477DCA !default;
@@ -51,7 +51,7 @@ header.navigation {
     padding-left: $navigation-padding;
     padding-right: 2em;
     margin-right: 2em;
-    margin-left: 0.4em;
+    margin-left: 0.2em;
 
     .logo-title{
       font-size: 2em;
