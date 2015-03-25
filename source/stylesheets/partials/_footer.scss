@@ -1,19 +1,54 @@
-.footer {
-  margin-top: 30px;
+footer {
+  padding:100px 0;
+  margin-bottom: 30px;
+  width:100%;
+  $footer-background: lighten($dark-gray, 57%);
 
+  background: $footer-background;
+  @include outer-container;
 
-  .footer-logos{
+  @include media($mobile) {
+    padding: 40px 0;
+    margin-bottom: 0;
+  }
+
+  .footer-links {
+    img {
+      opacity:1;
+    }
+
+    img:hover {
+      opacity: 0.7;
+    }
+
     @include span-columns(6);
     @include shift(3);
+
     @include media($mobile) {
-      
+      @include span-columns(2 of 4);
+      @include shift(1);
     }
 
-    .logo {
-      @include span-columns(2 of 6);
-    }
 
   }
 
-  
+    button {
+      @include span-columns(6 of 6);
+      margin-bottom: 60px;
+      @include clearfix;
+
+      @include media($mobile) {
+        @include span-columns(4 of 4);
+      }
+    }
+
+
+  .logo {
+    @include span-columns(2 of 6);
+
+    @include media($mobile) {
+      margin: 30px 0;
+      @include span-columns(4 of 4);
+    }
+  }
 }
