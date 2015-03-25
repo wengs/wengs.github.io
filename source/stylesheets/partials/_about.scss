@@ -1,9 +1,8 @@
 
-
 #weng {
 	@include span-columns(5 of 12);
   float: left;
- 
+  
   img {
 	  border-radius: 4px;
 	  min-width:200px;
