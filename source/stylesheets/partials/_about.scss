@@ -1,3 +1,5 @@
+
+
 #weng {
 	@include span-columns(5 of 12);
   float: left;
@@ -13,26 +15,36 @@
   }
 
   .projects {
-    margin-top: 10px;
+      margin-top: 10px;
 
-    a {
-      color: white;
+    .project {
+
+        a {
+          color: $tomato;
+        }
+
+        a:hover {
+          color: darken($tomato, 15%);
+        }
+
+        .project-title {
+          font-size: 1em;
+          font-weight: 400;
+          @include span-columns(2 of 5);
+        }
+
+        .project-description {
+          padding-left: 1em;
+          @include span-columns(5 of 5);
+        }
+
+       
     }
 
-    a:hover {
-      color: darken(white, 15%);
-    }
-
-    .project-title {
-      font-size: 0.9em;
-      @include span-columns(2 of 5);
-      @include row();
-    }
-
-    .project-description {
-      padding-left: 1em;
-      @include span-columns(5 of 5);
-    }
+     .separator {
+          @include span-columns(5 of 5);
+          margin-top: 0;
+        }
   }
 
   @include clearfix;
