@@ -1,0 +1,10 @@
+---
+title: Recursive + Memorization
+date: 2015-03-25
+tags: FirehoseProject, Algorithm
+---
+<p>Last week, I solved the Fibonacci problems in three ways. The first way was simply storing each sequence in an array. The second way was using recursion. The third way was similiar to the first one, but instead of storing all sequences, I made the array only stored only two elements, fibo(n-1) and fibo(n-2) because only these two elements were needed in order to calculate a new sequence. Although the recursion method was straight foward, the run time was exponential, which was very slow because we need to calculate from fibo(n-1) to fibo(1) in every recursion call.</p>
+
+<p>To solve this problem, I learned a new algorithm called memorization. I created an empty hash, memo, which stores all the calculated Fibonacci numbers. If a Fibonacci sequence has never been calculated, I will not only calculate it, but also store it to the hash for future use. Therefore, I do not need to calculate all the terms again. If a particular term is already in memo, we can just get the value from memo. This is very efficient. If we ignore the recursion, then the running time for in the Fibonacci function will be constant. The time will only depend on how many unmemorized terms, which is n, so the running time is linear, O(n)</p>
+
+<p>My mentor in Firehose Project also suggested another algorithm, which is storing the current Fibonacci sequence at some point if we do not have enough memory to store all terms. I am still working on it and hopefully I can finish it today.</p>
