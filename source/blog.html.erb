@@ -4,7 +4,7 @@ per_page: 10
 ---
 
 
-
+<div class = "outer-container">
 <% if paginate && num_pages > 1 %>
   <p>Page <%= page_number %> of <%= num_pages %></p>
 
@@ -21,6 +21,8 @@ per_page: 10
       <!-- use article.summary(250) if you have Nokogiri available to show just
            the first 250 characters -->
       <p><%= article.summary(250) %></p>
+      <%= link_to 'Read More', article, :class => "button" %>
+      
     </li>
   <% end %>
 </ul>
@@ -64,4 +66,5 @@ per_page: 10
             <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
         <% end %>
       </ol>
+</div>
 </div>

@@ -1,14 +1,8 @@
 
 #weng {
-	@include span-columns(5 of 12);
-  float: left;
+	@include span-columns(7 of 12);
+  float: right;
   
-  img {
-	  border-radius: 4px;
-	  min-width:200px;
-	  margin: 5px auto;
-  }
-
   @include media($mobile) {
     @include span-columns(12 of 12);
   }
@@ -50,8 +44,12 @@
 }
 
 #introduction {
-  @include span-columns(6 of 12);
-  float:right;
+  img {
+    border-radius: 5px;
+  }
+
+  @include span-columns(4 of 12);
+  float:left;
   @include media($mobile) {
     @include span-columns(12 of 12);
   }

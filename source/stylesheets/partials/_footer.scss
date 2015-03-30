@@ -1,11 +1,8 @@
 footer {
-  padding:100px 0;
+  margin-top: 30px;
   margin-bottom: 30px;
   width:100%;
-  $footer-background: lighten($dark-gray, 57%);
 
-  background: $footer-background;
-  @include outer-container;
 
   @include media($mobile) {
     padding: 40px 0;

@@ -1,11 +1,11 @@
 #main {
-    @include outer-container;
+  
     margin-top: 120px;
     @include media($mobile) {
       padding: 0 8px;
       font-size: $base-mobile-font-size;
     }
-    padding: 0 8px;
+    padding: 0 30px;
    
 }
 
@@ -59,4 +59,26 @@ ol {
   border-top: 1px solid $base-border-color;
   margin: 2em 0;
   padding-top: 2em;
+  font-size: 0.9em;
+}
+
+.article .read-more {
+  color: white;
+  
+}
+
+.outer-container {
+  @include outer-container
+}
+
+.button {
+  color: white;
+  background-color: #477dca;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.button:hover {
+  color:white;
+  background-color: darken(#477dca, 10%);
 }
