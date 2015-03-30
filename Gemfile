@@ -21,3 +21,5 @@ gem 'bourbon'
 gem 'neat'
 
 gem "jquery-middleman"
+
+gem "nokogiri"
