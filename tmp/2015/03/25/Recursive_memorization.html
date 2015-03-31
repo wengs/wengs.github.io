@@ -1,0 +1,72 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/application.js" type="text/javascript"></script>
+     <meta name="viewport" content ="width=device-width, initial-scale=1">
+  
+
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
+   
+    <title>Weng Sin | Web Developer</title>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+
+  </head>
+
+  <body>
+   
+    <header class="nav-down" >
+  <div class="navigation-wrapper">
+    <a href="index.html" class="logo">
+      <div class="logo-title">Weng Sin</div>
+      <div class="logo-subtitle">Civil Engineer | Web Developer</div>
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="/">About Me</a></a></li>
+        <li class="nav-link"><a href="/blog.html">Blog</a></li>
+        <li class= "nav-link"><a href= "#contact-me">Contact Me</a></li>
+      </ul>
+
+  </div>
+</header>
+
+		
+
+
+
+
+    <div id="main" role="main">
+        <article>
+  	<div class= "outer-container">
+    <h3>Recursive + Memorization</h3>
+    <h5></h5>
+    <p>Last week, I solved the Fibonacci problem in three ways. The first way was simply storing each sequence in an array. The second way was using recursion. The third way was similiar to the first one. Since I calculated the sequence from the bottom, so instead of storing all previous sequences, the array only stored only last two previous elements because only these two elements were needed in order to calculate a new sequence. Although the recursion method was straight foward, the run time was exponential, which was very slow because we need to calculate from fibo(n-1) to fibo(1) in every recursion call.</p>
+
+<p>To solve this problem, I learned a new algorithm called memorization. I created an empty hash, memo, which stores all the calculated Fibonacci numbers. If a Fibonacci sequence has never been calculated, I will not only calculate it, but also store it to the hash for future use. Therefore, I do not need to calculate all the terms again. If a particular term is already in memo, we can just get the value from memo. This is very efficient. If we ignore the recursion, then the running time for in the Fibonacci function will be constant. The time will only depend on how many unmemorized terms, which is n, so the running time is linear, O(n)</p>
+
+<p>My mentor in Firehose Project also suggested another algorithm, which is storing the current Fibonacci sequence at some point if we do not have enough memory to store all terms. I am still working on it and hopefully I can finish it today.</p>
+
+    </div>
+  </article>
+
+    </div>
+    
+    <footer role="contentinfo">
+	<div class="footer-links">
+		<a href="mailto: wengcheong.sin@gmail.com" class="email"><button>Email Me</button></a>
+	  	<a href="http://www.linkedin.com/in/wengcheongsin" class="logo"><img src="/images/linked-in-footer-logo.png" /></a>
+	  	<a href="http://github.com/wengs" class="logo github" id= "contact-me"><img src="/images/github-footer-logo.png" /></a>
+	  	<a href="https://twitter.com/wengcheongsin" class="logo"><img src="/images/twitter-footer-logo.png" /></a>
+	</div>
+</footer>
+  </body>
+</html>
+
+

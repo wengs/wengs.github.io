@@ -4,7 +4,7 @@
   <article>
   	<div class= "outer-container">
     <h3><%= current_page.data.title %></h3>
-    <h5><%= current_page.data.date.strftime('%b %e, %Y') %></h5>
+    <h5><%= current_page.data.strftime('%b %e, %Y') %></h5>
     <%= yield %>
     </div>
   </article>
