@@ -1,0 +1,20 @@
+---
+title: Group Project - A Chess Game
+date: 2015-04-12
+tags: FirehoseProject, GroupProject, Life
+---
+
+<p>I can never be only working right? My girlfriend and went to an oyster farm yesterday. We arrived there pretty late, but luckily still had a lot of oysters. Then we took a short walk along the shore. The view was very beautiful.</p>
+
+<%= image_tag 'images/oyster_farm.jpg'%>
+
+
+<p>After some fun, I was back to work. The team project went really well last week. My task last week was to implement a method to check whether there are pieces between two coordinates in either vertical or horizontal or diagonal direction. If the combination of two coordinates is not under one of three directions, the method should raise an exception. My mentor’s comments on my pull requests helped me al lot to write much DRYer code after the first commit. </p>
+
+<p>One interesting thing I learnt was using object.send(method). It seemed like a very easy concept to call a method differently, but I did not see why I needed to do this before this task. I found out it is extremely useful if I want to combine two or more methods basically have the same algorithm to a generic method.  I can just assign values to method accordingly. </p>
+
+<p>Another important thing I learnt was having a sense to recognize when to use SQL. Writing plain ruby is great, but sometimes the code could be much cleaner and lead to better performance by using SQL. For example, I was trying to query all pieces on a column on the chess board and check if any of those are between two coordinates. I can first create an array and query the pieces from the database, then using plain ruby to iterate through the array to check the coordinates of the pieces. However, I can achieve all those with only one line of code if I use SQL. I can do something like game.pieces.where(x_coord: 0).where(“y_coord &gt;= ? AND y_coord &lt;=”, smaller_coord, larger_coord).present? </p>
+
+<p>My mentor gave me the rule of thumb to decide when I should not use SQL. I should not use it if the SQL code is way too complicated, then I should Ruby to express the logic. I felt like I learnt a lot from this single task. </p>
+
+<p>I am responsible for an important task this week. The task is implementing a method to check if a move is valid or not, which will set the standard of how we think about this applications later. The method should be able to check the move according to the piece type. I only need to implement for the piece type, King at this point because king has the least logic. Although it is a challenging task, I have the confidence to tackle this task.</p>
